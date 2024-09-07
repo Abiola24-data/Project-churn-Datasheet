@@ -6,7 +6,7 @@ Author: Abiola Yussuf
 Date: 2024-08-31
 
 ## Project Description
-This is a datasheet that shows the analysis of a telecommunication, which makes me analyse the data from Churn Datasheet and Churn table both on Excel and powerBI to solve different business questions,
+This is a datasheet that shows the analysis of a telecommunication, which makes me analyse the data from Churn Datasheet and Churn table both on Excel and powerBI to solve different business questions.
 I imported the dataset to excel and powerBI from local disk respectively.
 
 ## Disclaimer: 
@@ -15,7 +15,7 @@ This is not real-world project but use for the purpose of learning to demostrate
 
 ## Problem Statement.
 
-The goal of this anlysis is to solve the following in Excel;
+The goal of this anlysis is to solve the following in DAX PowerBI query;
 
 - The customers who left within the last month
 
@@ -51,13 +51,13 @@ Also solve the following with PowerBI; building a top-level KPI dashboard for th
 7. Creating Dashboard
 
 ## Data Source
-The data used for this work is gotten from Northwin Traders. I studied the Schema, Objects related to the Schema, data dictionary and found the right tables for the analysis.
+The data used for this work is gotten from Churn Datasheet. I studied the Schema, Objects related to the Schema, data dictionary and found the right tables for the analysis.
 
-You can find a link to get started with installation and restoration of the database to your local machine. here
+You can find a link to get started with installation and restoration of the database to your local machine. [here](https://cdn.theforage.com/vinternships/companyassets/4sLyCPgmsy8DA6Dh3/02%20Churn-Dataset.xlsx)
 
 ## Data Transformation
 
-Firstly, I Import the data from excel and  i did a data transfromation which make me clean and added new column Loyality column, Risk category. This two column where add with the help of new measure query. 
+Firstly, I Imported the data from excel and  i did a data transfromation which make me clean and added new column in the data called Loyality column, Risk category. This two column where add with the help of new measure query. 
 
 ![Tranformated Data 1](https://github.com/user-attachments/assets/f911393e-830c-4484-b3de-5f693249f844)
 
@@ -81,7 +81,7 @@ The help of the data transformation and data modeling, I created two dashboard k
 
 - Yearly charge and monthly charge including average monthly charge and average yearly charge.
 
-- No of customers, No of admin ticket, No of tech ticket, No of senior citizen, No of dependants, No of partners.
+- Number of customers, Number of admin ticket, Number of tech ticket, Number of senior citizen, Number of dependants, Number of partners.
   
 - Paperless billing, payment method, gender, internet services.
   
@@ -112,12 +112,13 @@ The help of the data transformation and data modeling, I created two dashboard k
 
 ## Recommendation
 
-There are no doubts that the Business is performing well as the sales is in up trend over the years. However there is room for more improvement.
+There are no doubts that the Business is performing well as the subscribers are opting out of the telecomm service. However there is room for more improvement.
 
-There are just 91 customers in 21 countries that make 830 orders, there can still be improvement in sale,Advertisment and discount to attract new customer
-The cost of Shipping should be reduced to increase profit margins,the 3 shipping companines currently in use are cost effective than the other. federal shipping is expensive compare to others,further investigation should be done to know why.
-Awards and incentive should be introduced among the employee to create competition that improve sales.
-There is reportedly low sales in june of every year in the dataset, further investigation should be done to know why and solution should be provided to increase sale in this month and accross others.
+1) Increase tech support capacity for Fiber Optic customers and lower tech tickets per customer to 0.5
+
+2) Increase sale of 1 and 2 year contracts by 5% each
+
+3) Yearly increase of automatic payments by 5%
 
 ## Thank you for reading
 
