@@ -131,9 +131,8 @@ By leveraging **Excel & Power BI**, I transformed raw data into **business intel
 
 🔎 **Interested in a Data Analyst role?** Let’s discuss how I can bring these skills to your company!  
 
-📌 **Let’s Connect:**  
-📍 [LinkedIn](#) | 📍 [Portfolio](#) | 📍 [GitHub](#)  
-
+👩🏾‍💻 Connect with me on twitter: https://x.com/General1AB, LinkedIn: www.linkedin.com/in/yussuf-abiola-180474230
+---
 
 
 
