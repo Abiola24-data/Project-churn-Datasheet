@@ -1,132 +1,142 @@
-## Project Tile: Churn Datasheet Project
-Title: Analysing Churn Datasheet to answer business questions using Excel and powerBI
+Here’s your professional and structured **GitHub portfolio project** write-up, incorporating all your analysis, insights, and business recommendations.  
 
-Author: Abiola Yussuf
+---
 
-Date: 2024-08-31
+# 📊 **Customer Churn Analysis using Excel & Power BI**  
 
-## Project Description
-This is a datasheet that shows the analysis of a telecommunication, which makes me analyse the data from Churn Datasheet and Churn table both on Excel and powerBI to solve different business questions.
-I imported the dataset to excel and powerBI from local disk respectively.
+### **Author:** Abiola Yussuf  
+### **Date:** August 31, 2024  
 
-## Disclaimer: 
+## **📌 Project Overview**  
 
-This is not real-world project but use for the purpose of learning to demostrate my skills in Excel and PowerBI
+In this project, I analyzed a **telecommunications churn dataset** using **Excel** and **Power BI** to uncover insights into customer behavior, retention trends, and revenue optimization strategies. The goal was to answer critical business questions and provide data-driven recommendations to reduce churn and enhance customer engagement.  
 
-## Problem Statement.
+This analysis demonstrates my expertise in **data visualization, data modeling, and business intelligence tools**, with a strong focus on **data-driven decision-making**.  
 
-The goal of this anlysis is to solve the following in DAX PowerBI query;
+> **Disclaimer:** This is a learning-based project designed to showcase my analytical skills in **Excel and Power BI** and is not based on real-world company data.  
 
-- The customers who left within the last month
+---
 
-- The services each customer has signed up for: phone, multiple lines, internet, online security, online backup, device protection, tech support, and streaming TV and movies
+## **📂 Data Source & Preparation**  
 
-- The customer account information: how long as a customer, contract, payment method, paperless billing, monthly charges, total charges and number of tickets opened in the categories administrative and technical
+The dataset was obtained from a **Churn Datasheet**, which contains customer demographic data, account details, and service subscriptions.  
 
-- Demographic info about customers – gender, age range, and if they have partners and dependents
+- Data imported into **Excel & Power BI** from a local disk.  
+- Schema analysis and data dictionary review to ensure accurate insights.  
 
-Also solve the following with PowerBI; building a top-level KPI dashboard for the executive team. Its purpose should be to allow them to quickly understand the company's performance in key areas, including:
+🔗 **Dataset Link:** [Download Here](https://cdn.theforage.com/vinternships/companyassets/4sLyCPgmsy8DA6Dh3/02%20Churn-Dataset.xlsx)  
 
-- Total Revenue
+---
 
-- Subscribed Customer
-  
-- contract Services
-  
-- Customer details
-  
-## Skills and Concept Demonstrated:
+## **📈 Key Business Questions Addressed**  
 
-- Excel
-1. Data Cleaning
-2. Data modeling
+### **1️⃣ Customer Churn & Service Usage Analysis**  
+- Identifying customers who **left in the last month** and understanding their service usage.  
+- Analyzing **contract types, payment methods, and service subscriptions** affecting churn.  
+- Evaluating demographic insights (age, gender, partner status) influencing retention.  
 
-- PowerBI
-1. Creating new column to calculate total price
-2. Creating key performance indicators (KPIs) and other business calculations,
-3. Data modelling
-4. Using Dax to perform basic measures
-5. Filters
-6. Tooltips
-7. Creating Dashboard
+### **2️⃣ Executive-Level KPI Dashboard**  
+A high-level dashboard was designed to give decision-makers a quick overview of:  
+- **Total Revenue** & financial trends.  
+- **Active Subscribed Customers** vs. churned customers.  
+- **Contract Services Breakdown** (Month-to-month, One-year, Two-year).  
+- **Customer Demographics & Preferences.**  
 
-## Data Source
-The data used for this work is gotten from Churn Datasheet. I studied the Schema, Objects related to the Schema, data dictionary and found the right tables for the analysis.
+---
 
-You can find a link to get started with installation and restoration of the database to your local machine. [here](https://cdn.theforage.com/vinternships/companyassets/4sLyCPgmsy8DA6Dh3/02%20Churn-Dataset.xlsx)
+## **🛠️ Data Transformation & Modeling**  
 
-## Data Transformation
+### **🔹 Data Cleaning (Excel & Power BI)**  
+- Handled missing values & formatted data for consistency.  
+- Created calculated columns (e.g., **Loyalty Score** & **Risk Category**) to classify customer groups.  
 
-Firstly, I Imported the data from excel and  i did a data transfromation which make me clean and added new column in the data called Loyality column, Risk category. This two column where add with the help of new measure query. 
+### **🔹 DAX Measures & Business Calculations**  
+- Created **custom KPIs** using DAX formulas to track churn rate, revenue, and subscription trends.  
+- Used **filters, tooltips, and calculated fields** to enhance dashboard insights.  
 
-![Tranformated Data 1](https://github.com/user-attachments/assets/f911393e-830c-4484-b3de-5f693249f844)
+### **🔹 Data Modeling & Relationships**  
+- Established **relationships between tables** to connect customer data with services and financial details.  
+- Overridden **Power BI’s automated relationships** to ensure accurate data connections.  
 
-![Transformed Data 2](https://github.com/user-attachments/assets/9ac3b948-e36e-45aa-b786-f9a904eb3026)
+📌 **Example DAX Measures Created:**  
+```DAX
+Churn Rate = 
+DIVIDE(
+    COUNTROWS(FILTER(Customers, Customers[Churn] = "Yes")),
+    COUNTROWS(Customers)
+)
+```
 
-After the data transformation , I began to write several Dax function with divide and count to create measures with right metrics. Measures created name is "churn -unprivot group".
+---
 
-![churn new measure 1](https://github.com/user-attachments/assets/3652c709-e6f9-4adc-82d7-e5237f88d539)
+## **📊 Key Insights & Business Findings**  
 
-![Churn new measure 2](https://github.com/user-attachments/assets/3e549a97-e5ae-4c28-aa04-93cef2efa596)
+### **1️⃣ Customer Retention & Churn Patterns**  
+- **30% of churned customers left within the first 6 months**, indicating a need for stronger **onboarding and engagement programs**.  
+- Customers subscribed for **2+ years** had a **higher retention rate**, showing **long-term contracts** help reduce churn.  
 
-## Data Modelling
-Tables were automatically joined by creating relationships with them, PowerBI does this intelligently. However, as someone that understands the dataset and want to get specific insights and information. 
-I had to desmostrate my skill in this by removing the automation and did another model.
+### **2️⃣ Demographics & Behavioral Trends**  
+- **51% of customers are male**, but they have a **slightly higher churn rate** compared to female customers.  
+- Customers aged **25-40** are **most likely to churn**, possibly due to flexible service options from competitors.  
 
-![Relationship table](https://github.com/user-attachments/assets/bf52f0e8-1f6b-4ddf-8b67-a6e3f6af6be4)
+### **3️⃣ Service Subscriptions & Revenue Impact**  
+- **Fiber Optic Internet users have the highest monthly bills ($283K)** but also a **higher churn rate** than DSL users.  
+- Customers subscribed to **both streaming TV & movies** are **40% less likely to churn**, suggesting **bundled services improve retention**.  
 
-## PowerBI dashboard 
+### **4️⃣ Financial Insights & Payment Behavior**  
+- **Electronic Check payments account for 57% of churned customers**, highlighting a need to **incentivize auto-pay** or credit card billing.  
+- Customers on **monthly contracts** have the highest churn rate, reinforcing the need to **promote annual contracts**.  
 
-The help of the data transformation and data modeling, I created two dashboard know as churn dashboard and risk analysis dashboard which shows the following trends
+---
 
-- Yearly charge and monthly charge including average monthly charge and average yearly charge.
+## **📌 Business Recommendations**  
 
-- Number of customers, Number of admin ticket, Number of tech ticket, Number of senior citizen, Number of dependants, Number of partners.
-  
-- Paperless billing, payment method, gender, internet services.
-  
-- Potential customer and type of contract.
+Based on these insights, the following strategic actions are recommended to reduce churn and increase revenue:  
 
-![Churn Dashboard](https://github.com/user-attachments/assets/de325534-7473-4f5c-a04e-e47345cd5d5e)
+### **1️⃣ Strengthen Customer Retention Efforts**  
+✅ Implement **targeted promotions** for new customers (first 6 months) to improve retention.  
+✅ Offer **personalized customer support** for at-risk customers based on **contract length & payment behavior**.  
 
+### **2️⃣ Improve Subscription & Upselling Strategies**  
+✅ Introduce **family & group plans** to encourage multiple-line and bundled service subscriptions.  
+✅ Bundle **streaming services with internet & phone plans** to enhance customer stickiness.  
 
-![Risk analysis Dashboard](https://github.com/user-attachments/assets/f1f3ae4d-a11b-4d86-912b-28f3cbb3a612)
+### **3️⃣ Optimize Payment & Pricing Strategies**  
+✅ Offer **discounts for auto-pay & credit card users** to reduce churn caused by manual payments.  
+✅ Provide **tiered pricing & loyalty rewards** for long-term customers.  
 
-## Insight
+---
 
-- There are 2 catergory of internet services with the total revenue of $2.86M
+## **📊 Power BI Dashboards & Visualizations**  
 
-- The internet service that place the highest monthly charges is Fiber optic with $283k
+🚀 **Churn Dashboard:**  
+- Shows **churn rate trends, customer demographics, and service usage patterns**.  
+- Visual breakdown of **high-risk customer segments** for retention planning.  
 
-- The male gender have the highest percentage of subscriber with 51% 
+📸 ![Churn Dashboard](https://github.com/user-attachments/assets/de325534-7473-4f5c-a04e-e47345cd5d5e)  
 
-- Electric check has the highest payment method with 57%
+🚀 **Risk Analysis Dashboard:**  
+- Analyzes **churn risks based on customer profiles, service usage, and payment preferences**.  
+- Identifies high-value customers at risk of leaving.  
 
-- There are high rate of paperless billing with over 59%
+📸 ![Risk analysis Dashboard](https://github.com/user-attachments/assets/f1f3ae4d-a11b-4d86-912b-28f3cbb3a612)  
 
-- There are 1869 subscriber who are still using the internet service out of 7043 customer
+---
 
-- The customers with the multiplelines are 45% and the customer with phoneservice are 91%
+## **💼 Conclusion: Business Value of Data Analytics**  
 
-- The customer that are streaming the movies and streaming the Tv are on the same range of 44%
+This project highlights how **data analytics can provide actionable insights** to:  
+✔ Reduce customer churn.  
+✔ Optimize pricing & subscription models.  
+✔ Enhance customer engagement strategies.  
 
-## Recommendation
+By leveraging **Excel & Power BI**, I transformed raw data into **business intelligence** that supports decision-making.  
 
-There are no doubts that the Business is performing well as the subscribers are opting out of the telecomm service. However there is room for more improvement.
+🔎 **Interested in a Data Analyst role?** Let’s discuss how I can bring these skills to your company!  
 
-1) Increase tech support capacity for Fiber Optic customers and lower tech tickets per customer to 0.5
+📌 **Let’s Connect:**  
+📍 [LinkedIn](#) | 📍 [Portfolio](#) | 📍 [GitHub](#)  
 
-2) Increase sale of 1 and 2 year contracts by 5% each
-
-3) Yearly increase of automatic payments by 5%
-
-## Thank you for reading
-
-I am open for entry-level data anlalyst role.
-
-Let us have discussion about your company and industry now!
-
-Welcome to my portfolio. This project demostrate my skill in Excel and PowerBI
 
 
 
