@@ -1,5 +1,3 @@
-Here’s your professional and structured **GitHub portfolio project** write-up, incorporating all your analysis, insights, and business recommendations.  
-
 ---
 
 # 📊 **Customer Churn Analysis using Excel & Power BI**  
